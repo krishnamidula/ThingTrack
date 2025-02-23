@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>Account</h2>
+            <ul>
+                <li onclick="showSection('profile')" class="active">👤 My Profile</li>
+                <li onclick="showSection('gift')">🎁 Gift Points</li>
+                <li onclick="showSection('billing')">💳 Billing Info</li>
+                <li onclick="logout()">🚪 Logout</li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!-- Profile Section -->
+            <section id="profile" class="section active">
+                <h2>My Profile</h2>
+                <div class="card">
+                    <img src="profile.jpg" alt="User" class="profile-pic">
+                    <div class="info">
+                        <p><strong>Name:</strong> John Doe</p>
+                        <p><strong>Address:</strong> 123 Green Street, NY</p>
+                        <p><strong>Phone:</strong> +1 234 567 890</p>
+                        <p><strong>Email:</strong> johndoe@email.com</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gift Points Section -->
+            <section id="gift" class="section">
+                <h2>🎁 Gift Points</h2>
+                <p>You have <strong>1500 Points</strong> for using our services.</p>
+            </section>
+
+            <!-- Billing Section -->
+            <section id="billing" class="section">
+                <h2>💳 Billing Info</h2>
+                <p>Last Transaction: <strong>$50 - Paid</strong></p>
+                <p>Next Due Payment: <strong>$20 - COD</strong></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

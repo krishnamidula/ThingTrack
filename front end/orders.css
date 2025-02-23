@@ -1,0 +1,86 @@
+.orders-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.order-item {
+    background: rgba(0, 255, 0, 0.1);
+    padding: 15px;
+    margin: 10px auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    text-align: left;
+}
+
+.order-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.order-item a {
+    color: #2aa140;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.order-item a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background: #2aa140;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #1e7d3e;
+}
+
+#map {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}
+
+.chat-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.chat-box {
+    display: none;
+    width: 300px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.chat-box p {
+    text-align: left;
+    background: rgba(0, 255, 0, 0.2);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+#map {
+    display: none; /* Hide the map initially */
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+}

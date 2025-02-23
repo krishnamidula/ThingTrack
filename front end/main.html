@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Agentic App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Traffic<span>Agentic</span></div>
+        <ul class="nav-links">
+            <li><a href="account.html">Account</a></li>
+            </li><a href="live_tracking.html">Live Tracking</a><li>
+            <li><a href="orders.html">Orders</a></li>
+
+        </ul>
+        <a href="#" class="call-btn">Call Now</a>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1>Welcome to the Traffic Agentic App</h1>
+        <p>Manage traffic efficiently with real-time insights.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h2>Contact Us</h2>
+        <p class="contact-info">Email: contact@trafficagentic.com | Phone: +1 234 567 890</p>
+    </section>
+
+
+   <!-- Chatbot Button (Triggers Slide) -->
+   <div class="chatbot-icon" onclick="showChatbot()">
+    🤖
+</div>
+
+<!-- Sliding Chatbot Section -->
+<div class="chat-section" id="chatSection">
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Holo AI Assistant</h2>
+            <span onclick="hideChatbot()">✖</span>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="bot-message">Hello! I am your AI assistant. How can I help you today?</div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
